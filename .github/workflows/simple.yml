@@ -2,7 +2,7 @@ name: shell commands
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   run-shell-commands:
