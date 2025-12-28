@@ -15,6 +15,6 @@ jobs:
 
     steps:
       - name: Please like share and subscribe our devops channel
-        run: echo "$LIKE" and $SUBSCRIBE our $CHANNEL_NAME."
+        run: echo "$LIKE and $SUBSCRIBE our $CHANNEL_NAME.
         env:
           CHANNEL_NAME: DevOps Hint
