@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 env:
-  SUBSCRIBE: Subscribe #workflow Environment variable
+  SUBSCRIBE: ${{secrets.SUBSCRIBE_SECRET}} #workflow Secret Environment variable
 
 jobs:
   subscribe-to-my-channel: # name of the job
@@ -17,4 +17,4 @@ jobs:
       - name: Please like share and subscribe our devops channel
         run: echo "$LIKE and $SUBSCRIBE our $CHANNEL_NAME."
         env:
-          CHANNEL_NAME: DevOps Hint
+          CHANNEL_NAME: ${{secrets.CHANNEL_NAME_SECRET}}
