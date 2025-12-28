@@ -1,8 +1,7 @@
 name: shell commands
 
 on:
-  push:
-    branches: [main]
+  workflow_dispatch:
 
 jobs:
   run-shell-commands:

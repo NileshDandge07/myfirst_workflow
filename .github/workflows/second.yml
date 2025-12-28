@@ -1,0 +1,20 @@
+name: Custom Environment Variables
+
+on:
+  push:
+    branches: [main]
+
+env:
+  SUBSCRIBE: Subscribe #workflow Environment variable
+
+jobs:
+  subscribe-to-my-channel: # name of the job
+    runs-on: ubuntu-latest
+    env:
+      LIKE: Please like share #job level Environment variable
+
+    steps:
+      - name: Please like share and subscribe our devops channel
+        run: echo "$LIKE" and $SUBSCRIBE our $CHANNEL_NAME."
+        env:
+          CHANNEL_NAME: DevOps Hint
